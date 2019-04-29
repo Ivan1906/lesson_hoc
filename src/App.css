@@ -1,0 +1,26 @@
+#modal {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  text-align: justify;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 15% 0 15%;
+}
+
+.cardComments, .cardUser {
+  border: 1px solid;
+  padding: 5px 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 20px cornflowerblue;
+  width: 40vw;
+  height: 50vh;
+}
+
+.center {
+  text-align: center;
+}
