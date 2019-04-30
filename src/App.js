@@ -130,21 +130,10 @@ export default class App extends Component {
 
   render() {
     const {postId, userId, showUser, showComments} = this.state;
-    let EnhancedPosts,
-      EnhancedComments,
-      EnhancedUser;
 
-    if (postId) {
-      EnhancedPosts = withFetch('posts', `/${postId}`)(Posts);
-    };
-
-    if (postId) {
-      EnhancedComments = withFetch('comments', `?postId=${postId}`)(Comments);
-    };
-
-    if (userId) {
-      EnhancedUser = withFetch('users', `/${userId}`)(User);
-    };
+    let EnhancedPosts = withFetch('posts', `/${postId}`)(Posts);
+    let EnhancedComments = withFetch('comments', `?postId=${postId}`)(Comments);
+    let EnhancedUser = withFetch('users', `/${userId}`)(User);
 
     return (
       <React.Fragment>

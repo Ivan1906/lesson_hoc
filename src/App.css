@@ -12,6 +12,13 @@ h2 {
   margin: 20px 15% 0 15%;
 }
 
+button {
+  margin: 5px 15px;
+  padding: 5px;
+  font-size: 15px;
+  font-family: monospace;
+}
+
 .cardComments, .cardUser {
   border: 1px solid;
   padding: 5px 10px;
